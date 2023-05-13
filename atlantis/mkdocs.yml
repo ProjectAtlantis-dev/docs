@@ -8,6 +8,9 @@ copyright: |
 theme:
   name: material
   favicon: assets/favicon.png
+  icon:
+    logo: logo
+
   features:
     - announce.dismiss
     - content.code.annotate
@@ -30,7 +33,9 @@ theme:
     - search.suggest
     - toc.follow
     # - toc.integrate
+
   language: en
+
   palette:
     - scheme: default
       toggle:
@@ -44,6 +49,7 @@ theme:
         name: Switch to light mode
       primary: deep purple
       accent: purple
+
   font:
     text: Nunito
     code: Roboto Mono
@@ -53,6 +59,10 @@ plugins:
   - include-markdown
   - search:
       lang: en
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+
 
 extra:
   social:
@@ -62,31 +72,53 @@ extra:
       link: https://discord.com/channels/1060136861193994302/1060139931302891590
   version:
     provider: mike
+  analytics:
+    provider: google
+    property: G-HH1H7SD272
 
 
 
 
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - abbr
   - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
   - pymdownx.arithmatex:
       generic: true
-  - footnotes
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.mark
-  - attr_list
-
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 
 nav:
