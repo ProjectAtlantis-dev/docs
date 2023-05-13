@@ -1,0 +1,1 @@
+worker: cd atlantis && mkdocs serve
