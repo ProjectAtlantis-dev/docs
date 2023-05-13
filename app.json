@@ -1,7 +1,7 @@
 {
     "scripts": {
       "dokku": {
-        "predeploy": "cd /app/www && mkdocs build"
+        "predeploy": "cd /app/www/atlantis && mkdocs build"
       }
     }
   }
