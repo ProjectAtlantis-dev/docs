@@ -3,3 +3,5 @@ mkdocs==1.4.3
 mkdocs-include-markdown-plugin==4.0.4
 mkdocs-material==9.1.12
 mkdocs-material-extensions==1.1.1
+Pillow==9.5.0
+CairoSVG==2.7.0
