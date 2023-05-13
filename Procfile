@@ -1,1 +1,1 @@
-worker: cd atlantis && mkdocs serve
+worker: mkdocs serve -f atlantis/mkdocs.yml
