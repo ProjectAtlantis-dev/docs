@@ -1,0 +1,92 @@
+site_name: Project Atlantis Documentation
+site_url: https://docs.projectatlantis.ai
+repo_url: https://github.com/ProjectAtlantis-dev
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/ProjectAtlantis-dev"  target="_blank" rel="noopener">Project Atlantis</a>
+
+theme:
+  name: material
+  favicon: assets/favicon.png
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: deep purple
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: deep purple
+      accent: purple
+  font:
+    text: Nunito
+    code: Roboto Mono
+
+plugins:
+  - social
+  - include-markdown
+  - search:
+      lang: en
+
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/atlantis2point0
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.mark
+  - attr_list
+
+
+
+nav:
+  - Home: index.md
+  - Getting started:
+    - Installation: getting-started.md
+  - Setup:
+    - setup/index.md
