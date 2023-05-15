@@ -1,6 +1,6 @@
 # Announcements
 
-## May 15 @ Lift99 - Meetup: Hackage Setup and Administrivia
+## May 15 (VERY TENTATIVE MAY BE POSTPONED) @ Lift99 - Meetup: Hackage Setup and Administrivia
 
 This meeting will be a technical prelim to go over ProjectAtlantis setup. This will essentially be the opposite of the last meeting i.e. get into the weeds of technical details and answer questions
 
