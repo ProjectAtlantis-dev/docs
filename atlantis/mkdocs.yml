@@ -61,7 +61,6 @@ plugins:
   - minify:
       minify_html: true
 
-
 extra:
   homepage: https://www.projectatlantis.ai
   social:
@@ -121,6 +120,9 @@ markdown_extensions:
 
 
 nav:
+  - Announcements:
+    - announcements/index.md
   - Home: index.md
   - Map:
+    - map/index.md
     - Airport: map/airport.md
