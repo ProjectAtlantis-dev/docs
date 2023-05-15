@@ -122,7 +122,5 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Getting started:
-    - Installation: getting-started.md
-  - Setup:
-    - setup/index.md
+  - Map:
+    - Airport: map/airport.md

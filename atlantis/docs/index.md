@@ -1,12 +1,6 @@
 # Home
 
-hello there
+Still sorting out the role of docs in an AI world - seeing some projects begin to use Markdown as coding or data store
 
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
+Check out the airport map
+
